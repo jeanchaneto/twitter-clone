@@ -1,3 +1,4 @@
+import UsernameForm from "@/components/UsernameForm";
 import { useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 
@@ -28,7 +29,7 @@ export default function Home() {
   }
 
 if(!userInfo?.username) {
-  return <p>NO username!</p>
+  return <UsernameForm />
 }
 
   return (
